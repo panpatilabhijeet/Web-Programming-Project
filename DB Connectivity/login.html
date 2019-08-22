@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Login Verification </title>
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<script language="javascript">
+function func2()
+{
+	alert("Please Again Enter Your Username and Password");
+}
+function validate()
+{
+	if((document.form1.uname.value=="")||(document.form1.pwd.value==""))
+	{
+		alert("Please enter your username and password");
+	}
+}	
+</script>
+</head>
+<body>
+<center id=strip><img src=mobinfosys.png height=350 width=350></center>
+<font face="Arial" size=3>
+<form name="form1" method=post action="login.jsp">
+<center>
+<table cellspacing="20">
+<tr>
+<td>Username:</td><td><input type="text" name="uname"></td>
+</tr>
+
+<tr>
+<td>Password:</td><td><input type="password" name="pwd"></td>
+</tr>
+
+<tr>
+<td><input type="submit" value="Log in" onclick="validate()"></td>
+<td><input type="reset" value="Cancel" onclick="func2()"></td>
+</tr>
+</table>
+    <br>
+</center>
+<center><p align="center" style="color:rgb(255,127,39)"> If You Are A New User. Help Us To Serve You.Please Click on SignUp Down there to befriend us </p>
+<br>
+ <a href="Form.html" target="_parent"> SignUp </a> </center>
+</form>
+</body>
+</html>
